@@ -1,0 +1,24 @@
+{
+  "name": "node-stream",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "oppressor": "0.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://vadimdez@github.com/VadimDez/node-stream.git"
+  },
+  "author": "Vadym Yatsyuk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VadimDez/node-stream/issues"
+  },
+  "homepage": "https://github.com/VadimDez/node-stream#readme"
+}
