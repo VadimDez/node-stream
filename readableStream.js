@@ -2,9 +2,14 @@
  * Created by Vadym on 10/10/15.
  */
 var Readable = require('stream').Readable;
-var rs = new Readable;
-rs.push('test');
-rs.push('test test \n');
-rs.push(null); // done outputting data
+var rs = Readable();
+
+var c = 97;
+rs._read = function () {
+    rs.push(String.fromCharCode(c++));
+    if (c > 'z'.charCodeAt(0)) {
+        rs.push(null);
+    }
+};
 
 rs.pipe(process.stdout);
